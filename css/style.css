@@ -4,6 +4,10 @@ body {
   background-color: #FEFEFE;
 }
 
+.ds-font {
+  font-family: 'Dancing Script', cursive;
+}
+
 .restrained-width {
   min-width: 360px;
   max-width: 960px;
@@ -79,9 +83,11 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   height: 80px;
+  width: 120px;
 }
 
 .logo {
+  width: 100%;
   height: 100%;
 }
 
@@ -202,6 +208,33 @@ body {
 .main-footer {
   margin-top: 60px;
   padding: 10px;
+}
+
+.social-media-division-line {
+  background-color: white;
+  height: 3px;
+  width: 160px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.social-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 160px;
+  margin: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.social-media-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.social-media-icon:hover .svg-path {
+  fill: #E11481;
 }
 
 .hor-flex {
