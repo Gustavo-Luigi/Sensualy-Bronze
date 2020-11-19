@@ -14,6 +14,10 @@ body {
   margin: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 .main-header, .main-footer {
   background-color: #270439;
   color: white;
@@ -164,7 +168,6 @@ body {
   background-color: #270439;
   width: 100%;
   height: 75px;
-  text-decoration: none;
   color: white;
   text-transform: uppercase;
   text-align: center;
@@ -277,8 +280,6 @@ body {
 
 .btn:hover {
   color: #E11481;
-  -webkit-box-shadow: 0 0 30px #6A009E;
-          box-shadow: 0 0 30px #6A009E;
 }
 
 .instagram-btn {
@@ -384,8 +385,8 @@ body {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     right: 10px;
-    -webkit-transition: none;
-    transition: none;
+    -webkit-transition: all 0s;
+    transition: all 0s;
   }
   .menu-nav li {
     display: inline-block;

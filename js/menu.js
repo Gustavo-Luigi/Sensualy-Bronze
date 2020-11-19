@@ -1,6 +1,5 @@
 class Menu {
   static toggleMenu(){
-    let menu = document.getElementById('hamburguer-menu');
     document.getElementById('logo-nav-bar').classList.toggle('change');
   }
   static getCurrentPage(){
@@ -15,8 +14,9 @@ class Menu {
   }
 }
 
+let menu = document.getElementById('hamburguer-menu');
 
-document.addEventListener('click', Menu.toggleMenu);
+menu.addEventListener('click', Menu.toggleMenu);
 document.addEventListener('DOMContentLoaded', Menu.getCurrentPage);
 
 // window.addEventListener('resize', () => {
