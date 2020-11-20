@@ -1,12 +1,4 @@
-$bg-white: #FEFEFE;
-$pumpkin: #FF700A;
-$mexican-pink: #E11481;
-$purple: #6A009E;
-$russian-violet: #270439;
-
-$default-padding: 10px;
-$default-gutter: 20px;
-$large-font-size: 1.5em;
+@import './variables';
 
 body{
     margin: 0;
