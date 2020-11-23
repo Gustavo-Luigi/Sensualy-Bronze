@@ -1,0 +1,63 @@
+.btn{
+    width: 340px;
+    height: 60px;
+    background-color: $russian-violet;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+    font-size: $large-font-size;
+    cursor: pointer;
+    margin-left: 50px; // temporario
+    &:hover{
+        color: $mexican-pink;
+    }
+}
+
+.instagram-btn{
+    position: relative;
+    svg{
+        position: absolute;
+        left: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+    }
+    .instagram-txt{
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &:hover path{
+        fill: $mexican-pink;
+    }
+}
+
+.img-card{
+    width: 340px;
+    height: 340px;
+    border: 3px solid #270439;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 960px){
+    .btn{
+        width: 300px;
+        svg{
+            left: 10px;
+        }
+        .instagram-txt{
+            right: 10px;
+        }
+    }
+    .img-card{
+        width: 300px;
+        height: 300px;
+    }
+}

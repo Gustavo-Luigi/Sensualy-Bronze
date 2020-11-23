@@ -1,3 +1,76 @@
+.btn {
+  width: 340px;
+  height: 60px;
+  background-color: #270439;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.btn:hover {
+  color: #E11481;
+}
+
+.instagram-btn {
+  position: relative;
+}
+
+.instagram-btn svg {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+}
+
+.instagram-btn .instagram-txt {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.instagram-btn:hover path {
+  fill: #E11481;
+}
+
+.img-card {
+  width: 340px;
+  height: 340px;
+  border: 3px solid #270439;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 960px) {
+  .btn {
+    width: 300px;
+  }
+  .btn svg {
+    left: 10px;
+  }
+  .btn .instagram-txt {
+    right: 10px;
+  }
+  .img-card {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -12,6 +85,8 @@ body {
   min-width: 360px;
   max-width: 960px;
   margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
@@ -32,7 +107,6 @@ a {
 
 .main-header {
   position: fixed;
-  margin-bottom: 60px;
   z-index: 5;
 }
 
@@ -66,6 +140,7 @@ a {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .logo-nav-bar-overflow {
@@ -87,8 +162,7 @@ a {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  height: 80px;
-  width: 120px;
+  height: 90%;
 }
 
 .logo {
@@ -133,11 +207,10 @@ a {
 
 .menu-nav {
   position: absolute;
-  top: -400px;
   width: 100%;
   z-index: -1;
-  -webkit-transition: top 0.8s;
-  transition: top 0.8s;
+  top: 90px;
+  display: none;
 }
 
 .menu-nav ul {
@@ -208,7 +281,11 @@ a {
 }
 
 .change .menu-nav {
-  top: 90px;
+  display: block;
+}
+
+.under-nav {
+  padding-top: 130px;
 }
 
 .main-footer {
@@ -258,54 +335,6 @@ a {
 
 .bold {
   font-weight: 700;
-}
-
-.btn {
-  width: 340px;
-  height: 60px;
-  background-color: #270439;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border: none;
-  border-radius: 10px;
-  color: white;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-weight: bold;
-  font-size: 1.5em;
-  cursor: pointer;
-  margin-left: 50px;
-}
-
-.btn:hover {
-  color: #E11481;
-}
-
-.instagram-btn {
-  position: relative;
-}
-
-.instagram-btn svg {
-  position: absolute;
-  left: 30px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-}
-
-.instagram-btn .instagram-txt {
-  position: absolute;
-  right: 30px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.instagram-btn:hover path {
-  fill: #E11481;
 }
 
 .place-holder {
@@ -375,6 +404,12 @@ a {
 }
 
 @media screen and (min-width: 760px) {
+  .logo-nav-bar-overflow {
+    height: 135px;
+  }
+  .under-nav {
+    padding-top: 175px;
+  }
   .menu-nav {
     position: absolute;
     display: unset;
