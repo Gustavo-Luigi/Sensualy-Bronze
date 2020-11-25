@@ -94,4 +94,38 @@
 .hero-model {
   display: none;
 }
+
+.traits-section {
+  margin-top: 30px;
+  padding: 0 10px;
+}
+
+.traits-section h2 {
+  margin: 0 0 30px 0;
+  color: #6A009E;
+  font-size: 3rem;
+  white-space: nowrap;
+}
+
+.traits-section p {
+  color: #6A009E;
+}
+
+.traits-section .trait-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.traits-section .trait-card {
+  width: 150px;
+  text-align: center;
+}
+
+.traits-section .trait-img {
+  width: 120px;
+}
 /*# sourceMappingURL=home.css.map */

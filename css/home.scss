@@ -21,3 +21,28 @@
 .hero-model{
     display: none;
 }
+
+.traits-section{
+    margin-top: 30px;
+    padding: 0 $default-padding;
+    h2{
+        margin: 0 0 30px 0;
+        color: $purple;
+        font-size: 3rem;
+        white-space: nowrap;
+    }
+    p{
+        color: $purple;
+    }
+    .trait-row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .trait-card{
+        width: 150px;
+        text-align: center;
+    }
+    .trait-img{
+        width: 120px;
+    }
+}

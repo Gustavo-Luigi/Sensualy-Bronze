@@ -16,6 +16,10 @@ body {
           box-sizing: border-box;
 }
 
+.overflow {
+  width: 100vw;
+}
+
 a {
   text-decoration: none;
 }
@@ -23,18 +27,19 @@ a {
 .main-header, .main-footer {
   background-color: #270439;
   color: white;
+  position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: relative;
-}
-
-.main-header, .main-footer {
-  width: 100%;
 }
 
 .main-header {
   position: fixed;
+  background-color: #270439;
   z-index: 5;
+}
+
+.header-content {
+  background-color: #270439;
 }
 
 .top-header {
@@ -47,7 +52,8 @@ a {
 }
 
 .header-address {
-  position: relative;
+  position: absolute;
+  width: 100%;
   height: 100%;
 }
 
@@ -70,17 +76,23 @@ a {
   white-space: nowrap;
 }
 
-.logo-nav-bar-overflow {
-  width: 100%;
+.logo-nav-bar-container {
+  position: absolute;
+  z-index: -1;
   height: 90px;
   background-color: #FEFEFE;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s;
 }
 
 #logo-nav-bar {
+  width: 100vw;
   position: relative;
   height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .logo-container {
@@ -335,7 +347,7 @@ a {
 }
 
 @media screen and (min-width: 760px) {
-  .logo-nav-bar-overflow {
+  .logo-nav-bar-container {
     height: 135px;
   }
   .under-nav {

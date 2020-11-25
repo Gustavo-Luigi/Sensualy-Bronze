@@ -14,6 +14,9 @@ body{
     margin: auto;
     box-sizing: border-box;
 }
+.overflow{
+    width: 100vw;
+}
 a{
     text-decoration: none;
 }
@@ -21,15 +24,17 @@ a{
 .main-header, .main-footer{
     background-color: $russian-violet;
     color: white;
-    box-sizing: border-box;
     position: relative;
-}
-.main-header, .main-footer{
-    width: 100%;
+    box-sizing: border-box;
 }
 .main-header{
     position: fixed;
+    background-color: $russian-violet;
     z-index: 5;
+}
+// Necessario para esconder o menu passando
+.header-content{
+    background-color: $russian-violet;
 }
 
 .top-header{
@@ -40,7 +45,8 @@ a{
     z-index: 5;
 }
 .header-address{
-    position: relative;
+    position: absolute;
+    width: 100%;
     height: 100%;
     p{
         margin: 0;
@@ -58,19 +64,23 @@ a{
     font-weight: 700;
     white-space: nowrap;
 }
-.logo-nav-bar-overflow{
-    width: 100%;
+.logo-nav-bar-container{
+    position: absolute;
+    z-index: -1;
     height: 90px;
     background-color: $bg-white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: top 0.5s;
 }
 #logo-nav-bar{
+    width: 100vw;
     position: relative;
     height: 100%;
+    box-sizing: border-box;
 }
 .logo-container{
     position: absolute;
-    left: 10px;
+    left: $default-padding;
     top: 50%;
     transform: translateY(-50%);
     // height: 80px;
@@ -262,7 +272,7 @@ a{
     }
 }
 @media screen and (min-width: 760px){
-    .logo-nav-bar-overflow{
+    .logo-nav-bar-container{
         height: 135px;
     }
     .under-nav{
