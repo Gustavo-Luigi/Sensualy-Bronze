@@ -1,5 +1,4 @@
 @import './variables';
-@import './btn-and-cards';
 
 body{
     margin: 0;
@@ -84,7 +83,7 @@ a{
 
 #hamburguer-menu{
     position: absolute;
-    right: 10px;
+    right: $default-padding;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
@@ -209,7 +208,9 @@ a{
 .bold{
     font-weight: 700;
 }
-
+.uppercase{
+    text-transform: uppercase;
+}
 
 
 .place-holder{

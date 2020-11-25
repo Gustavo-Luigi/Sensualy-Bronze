@@ -1,0 +1,23 @@
+@import './variables';
+@import './btn-and-cards';
+
+.hero{
+    width: 100%;
+    height: calc(100vh - 130px);
+    background-image: url(../images/hero-background.jpg);
+    background-size: cover;
+}
+.hero-container{
+    position: relative;
+    height: 100%;
+}
+.hero-txt-container{
+    position: absolute;
+    width: 340px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero-model{
+    display: none;
+}
