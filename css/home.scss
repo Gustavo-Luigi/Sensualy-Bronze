@@ -1,6 +1,7 @@
 @import './variables';
 @import './btn-and-cards';
 
+
 .hero{
     width: 100%;
     height: calc(100vh - 130px);
@@ -55,7 +56,7 @@
         top: -80px;
         left: 50%;
         transform: translateX(-50%);
-        width: 100vw;
+        width: 100%;
         height: 200%;
         padding: 30px 0 50px 0;
         background-image: url(../images/mini-gallery-bg.svg);
@@ -86,6 +87,8 @@
     height: 500px;
 }
 
+
+// A partir dessa largura de tela, o h2 "Galeria" sai do fundo laranja
 @media screen and (min-width: 2110px){
     .mini-gallery-container{
         h2{

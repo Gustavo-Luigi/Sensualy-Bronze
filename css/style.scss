@@ -15,7 +15,7 @@ body{
     box-sizing: border-box;
 }
 .overflow{
-    width: 100vw;
+    width: 100%
 }
 a{
     text-decoration: none;
@@ -73,7 +73,7 @@ a{
     transition: top 0.5s;
 }
 #logo-nav-bar{
-    width: 100vw;
+    width: 100%;
     position: relative;
     height: 100%;
     box-sizing: border-box;
