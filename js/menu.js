@@ -26,10 +26,12 @@ let minScrollpos = 175;
 let navBar =document.querySelector(".logo-nav-bar-container")
 
 window.onscroll = function() {
-  console.log("Anterior: " + prevScrollpos);
-  console.log("Atual " + window.pageYOffset);
-let currentScrollPos = window.pageYOffset;
-  if(currentScrollPos > minScrollpos){
+  // console.log("Anterior: " + prevScrollpos);
+  // console.log("Atual " + window.pageYOffset);
+  let menuIsOpen = document.getElementById('logo-nav-bar').classList.contains('change');
+  let currentScrollPos = window.pageYOffset;
+  
+  if(currentScrollPos > minScrollpos && !menuIsOpen){
     if(prevScrollpos > currentScrollPos) {
       navBar.style.top = '40px';
     } else {
