@@ -69,8 +69,10 @@
 
 
 .mini-gallery-container{
+    margin: auto;
     padding: 0 $default-padding;
     h2{
+        margin-left: $default-padding;
         font-size: 3rem;
         color: $bg-white;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -83,9 +85,11 @@
     }
 }
 
-.quotes{
-    height: 500px;
-}
+
+
+
+
+
 
 
 // A partir dessa largura de tela, o h2 "Galeria" sai do fundo laranja

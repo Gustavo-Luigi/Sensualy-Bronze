@@ -37,12 +37,44 @@
     }
 }
 
-.img-card{
+.img-card-row-container{
+    display: flex;
     width: 340px;
     height: 340px;
+    overflow: hidden;
+}
+
+.img-card{
+    display: none;
+    width: 340px;
+    height: 340px;
+    margin: 0 $default-padding;
     border: 3px solid #270439;
     box-sizing: border-box;
     border-radius: 10px;
+    overflow: hidden;
+    img{
+        width: 100%;
+    }
+    &:first-child{
+        display: block;
+    }
+}
+
+
+@keyframes carousel{
+    0%, 20% {
+        transform: translate(0);
+    }
+    25%, 45% {
+        transform: translate(-100%);
+    }
+    50%, 70% {
+        transform: translate(-200%);
+    }
+    75%, 100% {
+        transform: translate(-300%);
+    }
 }
 
 @media screen and (min-width: 960px){
