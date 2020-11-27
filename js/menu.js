@@ -40,8 +40,8 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
-// window.addEventListener('resize', () => {
-//   console.log(window.innerWidth);
-// })
+window.addEventListener('resize', () => {
+  console.log(window.innerWidth);
+})
 
 

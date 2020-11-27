@@ -262,6 +262,21 @@
   font-style: italic;
 }
 
+@media screen and (min-width: 700px) {
+  .trait-row {
+    width: 45%;
+  }
+  .trait-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 @media screen and (min-width: 2110px) {
   .mini-gallery-container h2 {
     color: #6A009E;

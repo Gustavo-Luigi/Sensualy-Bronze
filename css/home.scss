@@ -142,7 +142,16 @@
 
 
 
-
+@media screen and (min-width: 700px){
+    .trait-row{
+        width: 45%;
+    }
+    .trait-block{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
 // A partir dessa largura de tela, o h2 "Galeria" sai do fundo laranja
 @media screen and (min-width: 2110px){
     .mini-gallery-container{
