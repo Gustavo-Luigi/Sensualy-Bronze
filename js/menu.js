@@ -9,10 +9,7 @@ function highlightCurrentPage(){
     }
   })
 }
-function hideNavBar(){
-  
-}
-
+ 
 let menu = document.getElementById('hamburguer-menu');
 
 menu.addEventListener('click', () => {
