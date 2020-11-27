@@ -233,29 +233,45 @@
 }
 
 .quote-container {
-  -webkit-animation: 20s carousel infinite;
-          animation: 20s carousel infinite;
+  -webkit-animation: 10s carousel infinite;
+          animation: 10s carousel infinite;
 }
 
 @-webkit-keyframes carousel {
-  50% {
+  40% {
     -webkit-transform: translate(0);
             transform: translate(0);
   }
-  100% {
+  50% {
     -webkit-transform: translate(-100%);
             transform: translate(-100%);
+  }
+  90% {
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
+  99% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
 }
 
 @keyframes carousel {
-  50% {
+  40% {
     -webkit-transform: translate(0);
             transform: translate(0);
   }
-  100% {
+  50% {
     -webkit-transform: translate(-100%);
             transform: translate(-100%);
+  }
+  90% {
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
+  99% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
 }
 
