@@ -74,44 +74,6 @@
   display: block;
 }
 
-@-webkit-keyframes carousel {
-  0%, 20% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-  25%, 45% {
-    -webkit-transform: translate(-100%);
-            transform: translate(-100%);
-  }
-  50%, 70% {
-    -webkit-transform: translate(-200%);
-            transform: translate(-200%);
-  }
-  75%, 100% {
-    -webkit-transform: translate(-300%);
-            transform: translate(-300%);
-  }
-}
-
-@keyframes carousel {
-  0%, 20% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-  25%, 45% {
-    -webkit-transform: translate(-100%);
-            transform: translate(-100%);
-  }
-  50%, 70% {
-    -webkit-transform: translate(-200%);
-            transform: translate(-200%);
-  }
-  75%, 100% {
-    -webkit-transform: translate(-300%);
-            transform: translate(-300%);
-  }
-}
-
 @media screen and (min-width: 960px) {
   .btn {
     width: 300px;
@@ -225,6 +187,79 @@
 
 .mini-gallery-btns .instagram-btn {
   display: none;
+}
+
+.quote-section {
+  margin-top: 50px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.quote-section h2 {
+  margin-left: 10px;
+  font-size: 3rem;
+  color: #6A009E;
+}
+
+.quotes {
+  display: -ms-grid;
+  display: grid;
+  width: 200%;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.quote-container {
+  -webkit-animation: 20s carousel infinite;
+          animation: 20s carousel infinite;
+}
+
+@-webkit-keyframes carousel {
+  50% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  100% {
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
+}
+
+@keyframes carousel {
+  50% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  100% {
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
+}
+
+.quote-author-picture {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border: 3px solid #270439;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.quote-author-picture img {
+  width: 100%;
+}
+
+.quote-author-name p {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.quote p {
+  text-align: center;
+  font-style: italic;
 }
 
 @media screen and (min-width: 2110px) {

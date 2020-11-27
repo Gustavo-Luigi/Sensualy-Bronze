@@ -85,6 +85,57 @@
     }
 }
 
+.quote-section{
+    margin-top: $default-section-margin;
+    margin: auto;
+    overflow: hidden;
+    h2{
+        margin-left: $default-padding;
+        font-size: 3rem;
+        color: $purple;
+    }
+}
+
+.quotes{
+    display: grid;
+    width: 200%;
+    grid-template-columns: 1fr 1fr;
+}
+.quote-container{
+    animation: 20s carousel infinite;
+}
+
+@keyframes carousel{
+    50% {transform: translate(0);}
+    100% {transform: translate(-100%);}
+}
+.quote-author-picture{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border: 3px solid #270439;
+    box-sizing: border-box;
+    border-radius: 100px;
+    overflow: hidden;
+    img{
+        width: 100%;
+    }
+}
+
+.quote-author-name{
+    p{
+        text-align: center;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+}
+.quote{
+    p{
+        text-align: center;
+        font-style: italic;
+    }
+}
+
 
 
 

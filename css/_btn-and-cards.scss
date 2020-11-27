@@ -62,20 +62,6 @@
 }
 
 
-@keyframes carousel{
-    0%, 20% {
-        transform: translate(0);
-    }
-    25%, 45% {
-        transform: translate(-100%);
-    }
-    50%, 70% {
-        transform: translate(-200%);
-    }
-    75%, 100% {
-        transform: translate(-300%);
-    }
-}
 
 @media screen and (min-width: 960px){
     .btn{
