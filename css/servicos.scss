@@ -1,0 +1,84 @@
+@import './variables';
+@import './btn-and-cards';
+
+.services{
+    padding: 0 $default-padding;
+    h1{
+        color: $purple;
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+}
+.service-img-container{
+    width: 340px;
+    height: 340px;
+    border: 3px solid #270439;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    img{
+        width: 100%;
+    }
+    .tanning-service-img{
+        object-position: 0 -150px;
+    }
+}
+.service-txt-container{
+    width: 340px;
+    h2{
+        margin: 0;
+    }
+    margin-bottom: 30px;
+}
+.btn{
+    margin: 30px 0;
+}
+.under-txt-btn{
+    display: none;
+}
+
+@media screen and (min-width: 960px){
+    .service-containter{
+        width: 100%;
+    }
+    .under-txt-btn{
+        display: block;
+        margin-bottom: 0;
+    }
+    .under-img-btn{
+        display: none;
+    }
+    .first-service{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: $default-section-margin;
+        .service-txt-container{
+            margin-left: $default-gutter;
+        }
+    }
+    .second-service{
+        display: flex;
+        margin-bottom: $default-section-margin;
+        .service-txt-container{
+            position: relative;
+            margin-right: $default-gutter;
+            .btn{
+                position: absolute;
+                margin: 0;
+                right: 0;
+                transform: translateY(-100%);
+            }
+        }
+     }
+    .service-img-container{
+        width: 460px;
+        height: 460px;
+    }
+    .service-txt-container{
+        width: 460px;
+        height: 460px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

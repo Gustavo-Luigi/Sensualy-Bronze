@@ -105,101 +105,110 @@
   }
 }
 
-.gallery h1 {
-  font-size: 3rem;
+.services {
+  padding: 0 10px;
+}
+
+.services h1 {
   color: #6A009E;
-  margin-left: 10px;
-}
-
-.img-card-row-container {
-  height: unset;
-  overflow: unset;
-  width: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.gallery-btns {
-  margin-top: 0;
-  margin-left: 10px;
-}
-
-.gallery-btns .instagram-btn {
-  display: none;
-}
-
-.under-row-btn {
+  font-size: 3rem;
   margin-bottom: 30px;
 }
 
-.img-card {
-  position: relative;
+.service-img-container {
+  width: 340px;
+  height: 340px;
+  border: 3px solid #270439;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.img-card .img3-row1 {
-  -o-object-position: 0 -30px;
-     object-position: 0 -30px;
+.service-img-container img {
+  width: 100%;
 }
 
-.img-card .img1-row2 {
-  -o-object-position: 0 -170px;
-     object-position: 0 -170px;
+.service-img-container .tanning-service-img {
+  -o-object-position: 0 -150px;
+     object-position: 0 -150px;
 }
 
-.img-card .img2-row2 {
-  -o-object-position: 0 -100px;
-     object-position: 0 -100px;
+.service-txt-container {
+  width: 340px;
+  margin-bottom: 30px;
 }
 
-.img-card .img3-row2 {
-  -o-object-position: 0 -100px;
-     object-position: 0 -100px;
+.service-txt-container h2 {
+  margin: 0;
 }
 
-.img-card .img1-row3 {
-  -o-object-position: 0 -100px;
-     object-position: 0 -100px;
+.btn {
+  margin: 30px 0;
 }
 
-.img-card .img2-row3 {
-  -o-object-position: 0 -60px;
-     object-position: 0 -60px;
+.under-txt-btn {
+  display: none;
 }
 
-@media screen and (max-width: 600px) {
-  .gallery-btns .under-row-btn {
-    display: block;
+@media screen and (min-width: 960px) {
+  .service-containter {
+    width: 100%;
   }
-  .img-card {
+  .under-txt-btn {
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
-}
-
-@media screen and (min-width: 600px) {
-  .gallery-btns .under-row-btn {
+  .under-img-btn {
     display: none;
   }
-  .gallery-btns #under-row-instagram {
-    display: none;
-  }
-  .img-card-row-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-bottom: 50px;
-  }
-  .gallery-btns {
+  .first-service {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-bottom: 50px;
   }
-  .gallery-btns .instagram-btn {
-    display: block;
+  .first-service .service-txt-container {
     margin-left: 20px;
   }
+  .second-service {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 50px;
+  }
+  .second-service .service-txt-container {
+    position: relative;
+    margin-right: 20px;
+  }
+  .second-service .service-txt-container .btn {
+    position: absolute;
+    margin: 0;
+    right: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  .service-img-container {
+    width: 460px;
+    height: 460px;
+  }
+  .service-txt-container {
+    width: 460px;
+    height: 460px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
-/*# sourceMappingURL=galeria.css.map */
+/*# sourceMappingURL=servicos.css.map */
