@@ -263,6 +263,22 @@
 }
 
 @media screen and (min-width: 700px) {
+  .hero .btn {
+    width: 100%;
+  }
+  .hero-txt-container {
+    left: 25%;
+  }
+  .hero-model {
+    display: unset;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+  }
+  .hero-model img {
+    height: 100%;
+  }
   .trait-row {
     width: 45%;
   }
