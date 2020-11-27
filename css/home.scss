@@ -139,9 +139,17 @@
 
 
 
+@media screen and (min-width: 600px){
+    .mini-gallery-btns{
+        display: flex;
+        .instagram-btn{
+            display: block;
+            margin-left: $default-gutter;
+        }
+    }
 
 
-
+}
 @media screen and (min-width: 700px){
     .hero{
         .btn{
