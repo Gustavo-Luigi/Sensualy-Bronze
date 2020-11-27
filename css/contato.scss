@@ -22,22 +22,25 @@ main{
 
 @media screen and (min-width: 960px){
 
-.address-sec{
-    display: flex;
-}
+    .address-sec{
+        display: flex;
+    }
 
-.contact{
-    width: 450px;
-    margin: 50px 20px;
-}
+    .contact{
+        width: 450px;
+        margin: 50px 20px;
+    }
 
-.facade-img{
-    background-image: url(../images/ambiente-foto.jpeg);
-    border: 3px solid #270439;
-    width: 450px;
-    height: 200px;
-    border-radius: 10px;
-    margin-top: 100px;
-    background-size: contain;
-}
+    .facade-img-container{
+        border: 3px solid #270439;
+        width: 450px;
+        height: 200px;
+        border-radius: 10px;
+        margin-top: 100px;
+        background-size: contain;
+        overflow: hidden;
+    }
+    .facade-img{
+        width: 100%;
+    }
 }
