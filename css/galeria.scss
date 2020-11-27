@@ -1,0 +1,83 @@
+@import './variables';
+@import './btn-and-cards';
+
+.gallery{
+    h2{
+        font-size: 3rem;
+        color: $purple;
+        margin-left: $default-padding;
+    }
+}
+.img-card-row-container{
+    height: unset;
+    overflow: unset;
+    width: 100%;
+    flex-direction: column;
+}
+.gallery-btns{
+    margin-top: 0;
+    margin-left: $default-padding;
+    .instagram-btn{
+        display: none;
+    }
+}
+.under-row-btn{
+    margin-bottom: 30px;
+}
+.img-card{
+    position: relative;
+    //First row
+    .img3-row1{
+        object-position: 0 -30px;
+    }
+    //Second row
+    .img1-row2{
+        object-position: 0 -170px;
+    }
+    .img2-row2{
+        object-position: 0 -100px;
+    }
+    .img3-row2{
+        object-position: 0 -100px;
+    }
+    //Third row
+    .img1-row3{
+        object-position: 0 -100px;
+    }
+    .img2-row3{
+        object-position: 0 -60px;
+    }
+}
+@media screen and(max-width: 600px){
+    .gallery-btns{
+        .under-row-btn{
+            display: block;
+        }
+    }
+
+    .img-card{
+        display: block;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width: 600px){
+    .gallery-btns{
+        .under-row-btn{
+            display: none;
+        }
+        #under-row-instagram{
+            display: none;
+        }
+    }
+    .img-card-row-container{
+        flex-direction: row;
+        margin-bottom: $default-section-margin;
+    }
+    .gallery-btns{
+        display: flex;
+        .instagram-btn{
+            display: block;
+            margin-left: $default-gutter;
+        }
+    }
+}

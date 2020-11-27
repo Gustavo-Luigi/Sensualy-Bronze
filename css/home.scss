@@ -48,7 +48,7 @@
     }
 }
 
-.mini-gallery{
+.gallery{
     position: relative;
     margin-top: 70px;
     .gallery-bg{
@@ -68,7 +68,7 @@
 
 
 
-.mini-gallery-container{
+.gallery-container{
     margin: auto;
     padding: 0 $default-padding;
     h2{
@@ -78,7 +78,7 @@
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 }
-.mini-gallery-btns{
+.gallery-btns{
     margin-top: $default-section-margin;
     .instagram-btn{
         display: none;
@@ -140,8 +140,12 @@
 
 
 @media screen and (min-width: 600px){
-    .mini-gallery-btns{
+    .quote-section{
+        margin-top: 70px;
+    }
+    .gallery-btns{
         display: flex;
+        margin-top: 0;
         .instagram-btn{
             display: block;
             margin-left: $default-gutter;
@@ -180,7 +184,7 @@
 }
 // A partir dessa largura de tela, o h2 "Galeria" sai do fundo laranja
 @media screen and (min-width: 2110px){
-    .mini-gallery-container{
+    .gallery-container{
         h2{
             color: $purple;
         }
