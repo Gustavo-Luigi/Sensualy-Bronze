@@ -7,6 +7,9 @@
     height: calc(100vh - 130px);
     background-image: url(../images/hero-background.jpg);
     background-size: cover;
+    .btn{
+        width: 100%;
+    }
 }
 .hero-container{
     position: relative;
@@ -180,11 +183,6 @@
 
 }
 @media screen and (min-width: 700px){
-    .hero{
-        .btn{
-            width: 100%;
-        }
-    }
     .hero-txt-container{
         left: 25%;
     }

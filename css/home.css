@@ -113,6 +113,10 @@
   background-size: cover;
 }
 
+.hero .btn {
+  width: 100%;
+}
+
 .hero-container {
   position: relative;
   height: 100%;
@@ -328,9 +332,6 @@
 }
 
 @media screen and (min-width: 700px) {
-  .hero .btn {
-    width: 100%;
-  }
   .hero-txt-container {
     left: 25%;
   }
