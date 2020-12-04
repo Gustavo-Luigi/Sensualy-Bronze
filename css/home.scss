@@ -94,7 +94,11 @@
         display: none;
     }
 }
-
+.img-card{
+    &:first-child{
+        margin-left: 0;
+    }
+}
 .quote-section{
     margin-top: $default-section-margin;
     margin: auto;

@@ -1,6 +1,7 @@
 @import './variables';
 @import './btn-and-cards';
 
+
 .gallery{
     h1{
         font-size: 3rem;
@@ -13,10 +14,16 @@
     overflow: unset;
     width: 100%;
     flex-direction: column;
+    padding: 0 $default-padding;
+    margin: auto;
 }
 .gallery-btns{
     margin-top: 0;
     margin-left: $default-padding;
+    .btn{
+        margin: auto;
+        margin-bottom: 30px;
+    }
     .instagram-btn{
         display: none;
     }
@@ -57,11 +64,25 @@
 
     .img-card{
         display: block;
+        margin: auto;
         margin-bottom: 30px;
     }
 }
 @media screen and (min-width: 600px){
+    .gallery{
+        .img-card-row-container{
+            &:first-child{
+                margin: 0;
+            }
+        }
+    }
+
     .gallery-btns{
+        display: flex;
+        .instagram-btn{
+            display: block;
+            margin-left: $default-gutter;
+        }
         .under-row-btn{
             display: none;
         }
@@ -72,12 +93,12 @@
     .img-card-row-container{
         flex-direction: row;
         margin-bottom: $default-section-margin;
-    }
-    .gallery-btns{
-        display: flex;
-        .instagram-btn{
-            display: block;
+        .img-card{
             margin-left: $default-gutter;
         }
+        .first-card{
+            margin-left: 0;
+        }
+
     }
 }
