@@ -86,6 +86,10 @@
 }
 .gallery-btns{
     margin-top: $default-section-margin;
+    .btn-contact{
+        display: block;
+        margin: auto;
+    }
     .instagram-btn{
         display: none;
     }

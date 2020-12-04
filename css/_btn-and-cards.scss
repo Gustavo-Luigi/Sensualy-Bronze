@@ -39,6 +39,7 @@
 
 .img-card-row-container{
     display: flex;
+    margin: auto;
     width: 340px;
     height: 340px;
     overflow: hidden;
@@ -48,16 +49,17 @@
     display: none;
     width: 340px;
     height: 340px;
-    margin: 0 $default-padding;
     border: 3px solid #270439;
     box-sizing: border-box;
     border-radius: 10px;
     overflow: hidden;
+    margin-left: 20px;
     img{
         width: 100%;
     }
     &:first-child{
         display: block;
+        margin: 0;
     }
 }
 
@@ -76,7 +78,7 @@
         height: 300px;
     }
     .img-card-row-container{
-        width: 960px;
+        width: 100%;
     }
     .img-card{
         &:nth-child(2){

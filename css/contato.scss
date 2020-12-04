@@ -13,11 +13,14 @@ main{
     }
 
 }
-
+.facade-img-container{
+    display: none;
+}
 .map{
     border: 3px solid #270439;
     border-radius: 10px;
     height: 380px;
+    margin-top: $default-section-margin;
 }
 
 @media screen and (min-width: 960px){
@@ -32,6 +35,7 @@ main{
     }
 
     .facade-img-container{
+        display: unset;
         border: 3px solid #270439;
         width: 450px;
         height: 200px;

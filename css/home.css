@@ -49,6 +49,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: auto;
   width: 340px;
   height: 340px;
   overflow: hidden;
@@ -58,12 +59,12 @@
   display: none;
   width: 340px;
   height: 340px;
-  margin: 0 10px;
   border: 3px solid #270439;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 10px;
   overflow: hidden;
+  margin-left: 20px;
 }
 
 .img-card img {
@@ -72,6 +73,7 @@
 
 .img-card:first-child {
   display: block;
+  margin: 0;
 }
 
 @media screen and (min-width: 600px) {
@@ -89,7 +91,7 @@
     height: 300px;
   }
   .img-card-row-container {
-    width: 960px;
+    width: 100%;
   }
   .img-card:nth-child(2) {
     display: block;
@@ -206,6 +208,11 @@
 
 .gallery-btns {
   margin-top: 50px;
+}
+
+.gallery-btns .btn-contact {
+  display: block;
+  margin: auto;
 }
 
 .gallery-btns .instagram-btn {
