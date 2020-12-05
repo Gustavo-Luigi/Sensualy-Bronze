@@ -10,7 +10,7 @@ body {
 }
 
 .restrained-width {
-  min-width: 360px;
+  min-width: 340px;
   max-width: 960px;
   margin: auto;
   -webkit-box-sizing: border-box;
