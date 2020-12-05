@@ -241,49 +241,86 @@
 .quotes {
   display: -ms-grid;
   display: grid;
-  width: 200%;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  width: 400%;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.quote {
+  max-width: 80ch;
+  margin: auto;
 }
 
 .quote-container {
-  -webkit-animation: 10s carousel infinite;
-          animation: 10s carousel infinite;
+  -webkit-animation: 25s carousel infinite;
+          animation: 25s carousel infinite;
 }
 
 @-webkit-keyframes carousel {
-  40% {
+  20% {
     -webkit-transform: translate(0);
             transform: translate(0);
   }
+  25% {
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
+  45% {
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
   50% {
-    -webkit-transform: translate(-100%);
-            transform: translate(-100%);
+    -webkit-transform: translate(-200%);
+            transform: translate(-200%);
   }
-  90% {
-    -webkit-transform: translate(-100%);
-            transform: translate(-100%);
+  70% {
+    -webkit-transform: translate(-200%);
+            transform: translate(-200%);
   }
-  99% {
+  75% {
+    -webkit-transform: translate(-300%);
+            transform: translate(-300%);
+  }
+  95% {
+    -webkit-transform: translate(-300%);
+            transform: translate(-300%);
+  }
+  100% {
     -webkit-transform: translate(0);
             transform: translate(0);
   }
 }
 
 @keyframes carousel {
-  40% {
+  20% {
     -webkit-transform: translate(0);
             transform: translate(0);
   }
+  25% {
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
+  45% {
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
   50% {
-    -webkit-transform: translate(-100%);
-            transform: translate(-100%);
+    -webkit-transform: translate(-200%);
+            transform: translate(-200%);
   }
-  90% {
-    -webkit-transform: translate(-100%);
-            transform: translate(-100%);
+  70% {
+    -webkit-transform: translate(-200%);
+            transform: translate(-200%);
   }
-  99% {
+  75% {
+    -webkit-transform: translate(-300%);
+            transform: translate(-300%);
+  }
+  95% {
+    -webkit-transform: translate(-300%);
+            transform: translate(-300%);
+  }
+  100% {
     -webkit-transform: translate(0);
             transform: translate(0);
   }

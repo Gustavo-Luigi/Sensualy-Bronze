@@ -115,28 +115,44 @@
 
 .quotes{
     display: grid;
-    width: 200%;
-    grid-template-columns: 1fr 1fr;
+    width: 400%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.quote{
+    max-width: 80ch;
+    margin: auto;
 }
 .quote-container{
-    animation: 10s carousel infinite;
+    animation: 25s carousel infinite;
 }
 
 @keyframes carousel{
-    40% {
+    20% {
         transform: translate(0);
+    }
+    25% {
+        transform: translate(-100%);
+    }
+    45% {
+        transform: translate(-100%);
     }
     50% {
-        transform: translate(-100%);
+        transform: translate(-200%);
     }
-    90% {
-        transform: translate(-100%);
+    70% {
+        transform: translate(-200%);
     }
-    99% {
+    75% {
+        transform: translate(-300%);
+    }
+    95% {
+        transform: translate(-300%);
+    }
+    100% {
         transform: translate(0);
       }
-    
 }
+
 .quote-author-picture{
     width: 150px;
     height: 150px;
