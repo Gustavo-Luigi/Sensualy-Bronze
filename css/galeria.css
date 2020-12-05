@@ -142,6 +142,11 @@
   margin-bottom: 30px;
 }
 
+.last-btn {
+  display: block;
+  margin: auto;
+}
+
 .img-card {
   position: relative;
 }

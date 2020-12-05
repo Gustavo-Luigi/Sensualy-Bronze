@@ -106,7 +106,7 @@ a {
 }
 
 .logo {
-  width: 100%;
+  max-width: 208px;
   height: 100%;
 }
 
