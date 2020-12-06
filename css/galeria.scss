@@ -14,12 +14,10 @@
     overflow: unset;
     width: 100%;
     flex-direction: column;
-    padding: 0 $default-padding;
     margin: auto;
 }
 .gallery-btns{
     margin-top: 0;
-    margin-left: $default-padding;
     .btn{
         margin: auto;
         margin-bottom: 30px;
@@ -75,6 +73,7 @@
 @media screen and (min-width: 600px){
     .gallery{
         .img-card-row-container{
+        padding: 0 $default-padding;
             &:first-child{
                 margin: 0;
             }
@@ -83,6 +82,7 @@
 
     .gallery-btns{
         display: flex;
+        margin-left: $default-padding;
         .instagram-btn{
             display: block;
             margin-left: $default-gutter;

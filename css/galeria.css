@@ -120,13 +120,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 10px;
   margin: auto;
 }
 
 .gallery-btns {
   margin-top: 0;
-  margin-left: 10px;
 }
 
 .gallery-btns .btn {
@@ -193,6 +191,9 @@
 }
 
 @media screen and (min-width: 600px) {
+  .gallery .img-card-row-container {
+    padding: 0 10px;
+  }
   .gallery .img-card-row-container:first-child {
     margin: 0;
   }
@@ -200,6 +201,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-left: 10px;
   }
   .gallery-btns .instagram-btn {
     display: block;
