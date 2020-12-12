@@ -49,12 +49,17 @@
     .img3-row2{
         object-position: 0 -100px;
     }
-    //Third row
-    .img1-row3{
+    //Third-row
+    .img3-row3{
         object-position: 0 -100px;
     }
-    .img2-row3{
-        object-position: 0 -60px;
+    //Fourth row
+    .img1-row4{
+        object-position: 0 -100px;
+    }
+
+    .img3-row4{
+        height: 100%;
     }
 }
 @media screen and(max-width: 600px){
