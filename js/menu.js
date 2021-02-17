@@ -22,6 +22,9 @@ function hideAndShowMenu() {
 window.addEventListener('scroll', hideAndShowMenu);
 
 // Menu toggle
+
+const menu = document.querySelector('#hamburguer-menu');
+
 menu.addEventListener('click', () => {
   document.getElementById('logo-nav-bar').classList.toggle('change');
 });
