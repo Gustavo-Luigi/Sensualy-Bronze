@@ -2,7 +2,7 @@ const lightbox = document.createElement('div');
 lightbox.id = 'lightbox';
 document.body.appendChild(lightbox);
 
-const images = document.querySelectorAll('expandable');
+const images = document.querySelectorAll('.expandable');
 
 images.forEach(image => {
   image.addEventListener('click', e => {
@@ -13,13 +13,14 @@ images.forEach(image => {
     while (lightbox.firstChild) {
       lightbox.removeChild(lightbox.firstChild);
     }
-    
+
     lightbox.appendChild(img);
   })
 });
 
 lightbox.addEventListener('click', e => {
   if (e.target !== e.currentTarget) {
-      return lightbox.classList.remove('active');
+    return;
   }
+  lightbox.classList.remove('active');
 });
