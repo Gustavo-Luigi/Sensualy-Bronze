@@ -3,7 +3,8 @@ let prevScrollpos = window.pageYOffset;
 let minScrollpos = 175;
 let navBar = document.querySelector(".logo-nav-bar-container");
 
-window.onscroll = function() {
+
+function hideAndShowMenu() {
 
   let menuIsOpen = document.getElementById('logo-nav-bar').classList.contains('change');
   let currentScrollPos = window.pageYOffset;
@@ -17,6 +18,8 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+window.addEventListener('scroll', hideAndShowMenu);
 
 // Menu toggle
 menu.addEventListener('click', () => {
