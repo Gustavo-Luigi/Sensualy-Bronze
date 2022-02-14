@@ -239,11 +239,9 @@
 }
 
 .quotes {
-  display: -ms-grid;
-  display: grid;
-  width: 400%;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+  width: 100%;
+  min-height: 363px;
 }
 
 .quote {
@@ -252,78 +250,30 @@
 }
 
 .quote-container {
-  -webkit-animation: 25s carousel infinite;
-          animation: 25s carousel infinite;
+  position: absolute;
+  width: 100%;
+  -webkit-transition: opacity 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out, -webkit-transform 1s ease-in-out;
 }
 
-@-webkit-keyframes carousel {
-  20% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-  25% {
-    -webkit-transform: translate(-100%);
-            transform: translate(-100%);
-  }
-  45% {
-    -webkit-transform: translate(-100%);
-            transform: translate(-100%);
-  }
-  50% {
-    -webkit-transform: translate(-200%);
-            transform: translate(-200%);
-  }
-  70% {
-    -webkit-transform: translate(-200%);
-            transform: translate(-200%);
-  }
-  75% {
-    -webkit-transform: translate(-300%);
-            transform: translate(-300%);
-  }
-  95% {
-    -webkit-transform: translate(-300%);
-            transform: translate(-300%);
-  }
-  100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
+.previous-item {
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
-@keyframes carousel {
-  20% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-  25% {
-    -webkit-transform: translate(-100%);
-            transform: translate(-100%);
-  }
-  45% {
-    -webkit-transform: translate(-100%);
-            transform: translate(-100%);
-  }
-  50% {
-    -webkit-transform: translate(-200%);
-            transform: translate(-200%);
-  }
-  70% {
-    -webkit-transform: translate(-200%);
-            transform: translate(-200%);
-  }
-  75% {
-    -webkit-transform: translate(-300%);
-            transform: translate(-300%);
-  }
-  95% {
-    -webkit-transform: translate(-300%);
-            transform: translate(-300%);
-  }
-  100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
+.current-item {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.next-item {
+  opacity: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 .quote-author-picture {

@@ -114,43 +114,34 @@
 }
 
 .quotes{
-    display: grid;
-    width: 400%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+    width: 100%;
+    min-height: 363px;
 }
 .quote{
     max-width: 80ch;
     margin: auto;
 }
+
 .quote-container{
-    animation: 25s carousel infinite;
+    position: absolute;
+    width: 100%;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }
 
-@keyframes carousel{
-    20% {
-        transform: translate(0);
-    }
-    25% {
-        transform: translate(-100%);
-    }
-    45% {
-        transform: translate(-100%);
-    }
-    50% {
-        transform: translate(-200%);
-    }
-    70% {
-        transform: translate(-200%);
-    }
-    75% {
-        transform: translate(-300%);
-    }
-    95% {
-        transform: translate(-300%);
-    }
-    100% {
-        transform: translate(0);
-      }
+.previous-item{
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.current-item{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.next-item{
+    opacity: 0;
+    transform: translateX(100%);
 }
 
 .quote-author-picture{
