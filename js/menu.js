@@ -1,30 +1,41 @@
-// Hide and show navbar
 let prevScrollpos = window.pageYOffset;
-let minScrollpos = 175;
-let navBar = document.querySelector(".logo-nav-bar-container");
-
+const minScrollpos = 175;
+const navBar = document.querySelector(".logo-nav-bar-container");
+const desktopNavHeight = "135px";
+const mobileNavHeight = "90px";
 
 function hideAndShowMenu() {
-
-  let menuIsOpen = document.getElementById('logo-nav-bar').classList.contains('change');
+  let menuIsOpen = document
+    .getElementById("logo-nav-bar")
+    .classList.contains("change");
   let currentScrollPos = window.pageYOffset;
 
-  if(currentScrollPos > minScrollpos && !menuIsOpen){
-    if(prevScrollpos > currentScrollPos) {
-      navBar.style.top = '40px';
+  if (currentScrollPos > minScrollpos && !menuIsOpen) {
+    if (prevScrollpos > currentScrollPos) {
+      showNav();
     } else {
-      navBar.style.top = '-200px';
+      hideNav();
     }
   }
   prevScrollpos = currentScrollPos;
 }
 
-window.addEventListener('scroll', hideAndShowMenu);
+function showNav() {
+  if (window.innerWidth < 760) {
+    navBar.style.height = mobileNavHeight;
+  } else {
+    navBar.style.height = desktopNavHeight;
+  }
+}
 
-// Menu toggle
+function hideNav() {
+  navBar.style.height = 0;
+}
 
-const menu = document.querySelector('#hamburguer-menu');
+window.addEventListener("scroll", hideAndShowMenu);
 
-menu.addEventListener('click', () => {
-  document.getElementById('logo-nav-bar').classList.toggle('change');
+const menu = document.querySelector("#hamburguer-menu");
+
+menu.addEventListener("click", () => {
+  document.getElementById("logo-nav-bar").classList.toggle("change");
 });

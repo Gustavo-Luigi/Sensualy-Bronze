@@ -78,14 +78,15 @@ a {
 }
 
 .logo-nav-bar-container {
-  position: absolute;
+  position: fixed;
   z-index: -1;
   height: 90px;
   background-color: #FEFEFE;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  -webkit-transition: top 0.5s;
-  transition: top 0.5s;
+  -webkit-transition: height 0.2s ease-in-out;
+  transition: height 0.2s ease-in-out;
+  overflow: hidden;
 }
 
 #logo-nav-bar {
@@ -126,8 +127,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 50px;
-  height: 40px;
+  width: 40px;
+  height: 30px;
   cursor: pointer;
 }
 
@@ -137,7 +138,7 @@ a {
 
 .line {
   width: 100%;
-  height: 6px;
+  height: 4px;
   background-color: #270439;
   -webkit-transition: -webkit-transform 0.8s;
   transition: -webkit-transform 0.8s;
@@ -206,8 +207,8 @@ a {
 }
 
 .change .line-1 {
-  -webkit-transform: rotate(-405deg) translate(-16px, 6px);
-          transform: rotate(-405deg) translate(-16px, 6px);
+  -webkit-transform: rotate(-405deg) translate(-14px, 4px);
+          transform: rotate(-405deg) translate(-14px, 4px);
 }
 
 .change .line-2 {
@@ -216,8 +217,8 @@ a {
 }
 
 .change .line-3 {
-  -webkit-transform: rotate(405deg) translate(-16px, -8px);
-          transform: rotate(405deg) translate(-16px, -8px);
+  -webkit-transform: rotate(405deg) translate(-14px, -6px);
+          transform: rotate(405deg) translate(-14px, -6px);
 }
 
 .change .menu-nav {
