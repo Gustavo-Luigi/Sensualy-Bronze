@@ -67,10 +67,15 @@ a{
 }
 .logo-nav-bar-container{
     position: absolute;
+    top: 40px;
     z-index: -1;
     height: 90px;
     background-color: $bg-white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: top 0.5s ease-in-out;
+    &.hide-nav{
+        top: -200px;
+    }
 }
 #logo-nav-bar{
     width: 100%;
@@ -274,7 +279,6 @@ a{
 @media screen and (min-width: 760px){
     .logo-nav-bar-container{
         height: 135px;
-        transition: top 0.5s ease-in-out;
     }
     .under-nav{
         padding-top: 175px;

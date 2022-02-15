@@ -1,7 +1,6 @@
-let prevScrollpos = window.pageYOffset;
+let prevScrollPos = window.pageYOffset;
 const minScrollpos = 175;
 const navBar = document.querySelector(".logo-nav-bar-container");
-
 
 function hideAndShowMenu() {
   let menuIsOpen = document
@@ -10,21 +9,21 @@ function hideAndShowMenu() {
   let currentScrollPos = window.pageYOffset;
 
   if (currentScrollPos > minScrollpos && !menuIsOpen) {
-    if (prevScrollpos > currentScrollPos) {
+    if (prevScrollPos > currentScrollPos) {
       showNav();
     } else {
       hideNav();
     }
   }
-  prevScrollpos = currentScrollPos;
+  prevScrollPos = currentScrollPos;
 }
 
 function showNav() {
-    navBar.style.top = '40px';
+  navBar.classList.remove("hide-nav");
 }
 
 function hideNav() {
-  navBar.style.top = '-200px';
+  navBar.classList.add('hide-nav');
 }
 
 window.addEventListener("scroll", hideAndShowMenu);
