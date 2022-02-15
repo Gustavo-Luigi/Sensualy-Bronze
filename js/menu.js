@@ -1,8 +1,7 @@
 let prevScrollpos = window.pageYOffset;
 const minScrollpos = 175;
 const navBar = document.querySelector(".logo-nav-bar-container");
-const desktopNavHeight = "135px";
-const mobileNavHeight = "90px";
+
 
 function hideAndShowMenu() {
   let menuIsOpen = document
@@ -21,15 +20,11 @@ function hideAndShowMenu() {
 }
 
 function showNav() {
-  if (window.innerWidth < 760) {
-    navBar.style.height = mobileNavHeight;
-  } else {
-    navBar.style.height = desktopNavHeight;
-  }
+    navBar.style.top = '40px';
 }
 
 function hideNav() {
-  navBar.style.height = 0;
+  navBar.style.top = '-200px';
 }
 
 window.addEventListener("scroll", hideAndShowMenu);
