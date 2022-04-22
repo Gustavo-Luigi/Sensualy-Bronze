@@ -108,8 +108,8 @@
 
 .hero {
   width: 100%;
-  height: calc(100vh - 130px);
-  background-image: url(../images/hero-background.jpg);
+  height: calc(100vh - 100px);
+  background-image: url(../images/hero/hero-background-720.jpg);
   background-size: cover;
 }
 
@@ -349,6 +349,24 @@
 @media screen and (min-width: 2110px) {
   .gallery-container h2 {
     color: #6A009E;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .hero {
+    background-image: url(../images/hero/hero-background-1080.jpg);
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .hero {
+    background-image: url(../images/hero/hero-background-2k.jpg);
+  }
+}
+
+@media screen and (min-width: 2050px) {
+  .hero {
+    background-image: url(../images/hero/hero-background.jpg);
   }
 }
 /*# sourceMappingURL=home.css.map */

@@ -39,7 +39,7 @@ a{
 }
 
 .top-header{
-    height: 40px;
+    height: $header-strip-height;
     background-color: $russian-violet;
     box-sizing: border-box;
     position: relative;
@@ -69,7 +69,7 @@ a{
     position: absolute;
     top: 40px;
     z-index: -1;
-    height: 90px;
+    height: $navbar-height-mobile;
     background-color: $bg-white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: top 0.5s ease-in-out;
@@ -94,6 +94,7 @@ a{
 .logo{
     max-width: 208px;
     height: 100%;
+    // max-height: 100px;
 }
 
 #hamburguer-menu{
@@ -113,7 +114,7 @@ a{
 }
 .line{
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: $russian-violet;
     transition: transform 0.8s;
 }
@@ -154,7 +155,8 @@ a{
         line-height: 75px;
         letter-spacing: 0.1em;
         font-weight: 700;
-        font-size: $large-font-size;
+        // font-size: $large-font-size;
+        font-size: 1.125rem;
         position: relative;
         &::after{
             content: "";
@@ -185,7 +187,8 @@ a{
     }
 }
 .under-nav{
-    padding-top: 130px;
+$navbar-height: 100px;
+    padding-top: calc(#{$navbar-height-mobile} + #{$header-strip-height});
 }
 .main-footer{
     margin-top: 60px;
@@ -278,10 +281,10 @@ a{
 }
 @media screen and (min-width: 760px){
     .logo-nav-bar-container{
-        height: 135px;
+        height: $navbar-height;
     }
     .under-nav{
-        padding-top: 175px;
+        padding-top: calc(#{$navbar-height} + #{$header-strip-height});
     }
     .menu-nav{
         position: absolute;
